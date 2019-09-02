@@ -1,0 +1,116 @@
+*, *:before , *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+
+    color: white;
+}
+
+.promo_nav {
+    width: 100%;
+    min-height: 655px;
+    
+    background: #fff url("../img/header_nav.png") no-repeat center; 
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 86px;
+    width: 100%;
+
+    background-color: white;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.31);
+    opacity: 0.94;
+}
+    
+nav {
+    min-width: 420px;
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center; 
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #626262;
+
+    padding: 31px 20px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 670px;
+}
+
+.promo h2 {
+    text-align: center;
+    
+    color: #ffffff;
+
+    font-size: 116px;
+    line-height: 70px;
+    text-transform: uppercase;
+
+    margin: 0 0 85px 0;
+}
+
+.promo h2 span {
+    font-size: 22px;
+    letter-spacing: 30px;
+    font-weight: 400;
+}
+
+.basket {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-width: 150px;
+    height: 100%;
+}
+
+.basket p {
+    color: #9d9d9d;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.basket_a {
+    text-decoration: none;
+}

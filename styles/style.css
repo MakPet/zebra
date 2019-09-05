@@ -36,9 +36,8 @@ header {
     min-height: 86px;
     width: 100%;
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.31);
-    opacity: 0.94;
 }
     
 nav {
@@ -46,9 +45,10 @@ nav {
     height: 100%;
 }
 
-header nav ul {
+header nav .main-menu {
     display: flex;
     align-items: center; 
+
 
     margin: 0;
     padding: 0;
@@ -56,15 +56,118 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #626262;
+header nav .main-menu > li > a {
+    padding: 30px 20px;
 
-    padding: 31px 20px;
+    color: #626262;
 
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
+    text-decoration: none;
+
+    border-bottom: 1px solid transparent;
+}
+
+header nav .main-menu > li > a:hover {
+    background-color: #cf1a2b;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.main-menu > li {
+    position: relative;
+}
+
+.main-menu ul:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.main-menu .sub-menu-one {
+    position: absolute;
+    top: 53px;
+
+    display: none;
+
+    min-width: 220px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background-color: #cf1a2b;
+}
+
+.main-menu > li:hover .sub-menu-one {
+  display: block;
+}
+
+.sub-menu-one li p {
+    margin: 0;
+
+    color: #fff;
+}
+
+.sub-menu-one li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+}
+
+
+.sub-menu-one li:first-child {
+    padding: 25px 35px;
+}
+
+.sub-menu-one li:first-child p{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.sub-menu-one li:first-child p span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-menu-one li:nth-child(2) {
+    padding: 65px 70px;
+}
+
+.main-menu .sub-menu-two, .main-menu .sub-menu-three {
+    position: absolute;
+    top: 53px;
+    left: 222px;
+
+    display: none;
+
+    min-width: 190px;
+
+    margin: 0;
+    padding: 10px 40px;
+
+    list-style: none;
+
+    background-color: #cf1a2b;
+}
+
+.sub-menu-two li a, .sub-menu-three li a{
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+
+    text-decoration: none;
+}
+
+.main-menu .sub-menu-three {
+    position: absolute;
+    top: 53px;
+    left: 412px;
+}
+
+.main-menu > li:hover .sub-menu-two, .main-menu > li:hover .sub-menu-three  {
+    display: block;
 }
 
 .promo {
@@ -109,8 +212,4 @@ header nav ul li a {
     font-size: 24px;
     font-weight: 400;
     line-height: 20px;
-}
-
-.basket_a {
-    text-decoration: none;
 }

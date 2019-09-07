@@ -137,11 +137,11 @@ header .main-menu > li > a:hover {
 }
 
 .sub-menu-one li:nth-child(2) {
-    padding: 65px 70px;
+    padding: 50px 70px;
 }
 
 .sub-menu-two, .sub-menu-three {
-    min-width: 190px;
+    min-width: 200px;
 
     margin: 0;
     padding: 10px 40px;

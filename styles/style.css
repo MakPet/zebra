@@ -107,7 +107,10 @@ header .main-menu > li > a:hover {
 }
 
 .main-menu .sub-menu-one {
-    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 220px;
 
     margin: 0;
     padding: 0;
@@ -118,7 +121,7 @@ header .main-menu > li > a:hover {
 }
 
 .sub-menu-one li:first-child {
-    padding: 25px 35px;
+    padding: 10px 35px;
 }
 
 .sub-menu-one li:first-child p {
@@ -128,7 +131,6 @@ header .main-menu > li > a:hover {
 
     font-size: 38px;
     font-weight: 700;
-    line-height: 20px;
     text-transform: uppercase;
 }
 
@@ -137,11 +139,16 @@ header .main-menu > li > a:hover {
 }
 
 .sub-menu-one li:nth-child(2) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
     padding: 50px 70px;
 }
 
 .sub-menu-two, .sub-menu-three {
-    min-width: 200px;
+    max-width: 200px;
+    width: 199px;
 
     margin: 0;
     padding: 10px 40px;

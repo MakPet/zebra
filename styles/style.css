@@ -20,18 +20,14 @@ body {
     color: white;
 }
 
-.promo_nav {
-    width: 100%;
-    min-height: 655px;
-    
-    background: #fff url("../img/header_nav.png") no-repeat center; 
-    background-size: cover;
-}
+
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    position: absolute;
 
     min-height: 86px;
     width: 100%;
@@ -76,6 +72,23 @@ header .main-menu > li > a:hover {
     background-color: #cf1a2b;
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.basket {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-width: 150px;
+    height: 100%;
+}
+
+.basket p {
+    color: #9d9d9d;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 .main-menu > li {
@@ -168,13 +181,17 @@ header .main-menu > li > a:hover {
     text-decoration: none;
 }
 
+.promo_nav {
+    width: 100%;
+}
+
 .promo {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     width: 100%;
-    min-height: 670px;
+    min-height: 655px;
 }
 
 .promo h2 {
@@ -182,11 +199,11 @@ header .main-menu > li > a:hover {
     
     color: #ffffff;
 
+    margin: 70px 0 0 0;
+
     font-size: 116px;
     line-height: 70px;
     text-transform: uppercase;
-
-    margin: 0 0 85px 0;
 }
 
 .promo h2 span {
@@ -195,19 +212,7 @@ header .main-menu > li > a:hover {
     font-weight: 400;
 }
 
-.basket {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    min-width: 150px;
-    height: 100%;
-}
-
-.basket p {
-    color: #9d9d9d;
-
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 20px;
+.promo-1 {
+    background: #fff url("../img/header_nav.png") no-repeat center; 
+    background-size: cover;
 }

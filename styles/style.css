@@ -28,6 +28,7 @@ header {
     align-items: center;
 
     position: absolute;
+    z-index: 1;
 
     min-height: 86px;
     width: 100%;

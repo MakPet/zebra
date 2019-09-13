@@ -16,31 +16,23 @@
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
-.slick-prev,
-.slick-next
+.prev,
+.next
 {
-    font-size: 0;
-    line-height: 0;
+    z-index: 1;
 
     position: absolute;
     top: 50%;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
 }
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -77,9 +69,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev
-{
-}
 [dir='rtl'] .slick-prev
 {
     right: -25px;
@@ -96,7 +85,9 @@
 
 .slick-next
 {
+    right: 0px;
 }
+
 [dir='rtl'] .slick-next
 {
     right: auto;

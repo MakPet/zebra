@@ -217,3 +217,13 @@ header .main-menu > li > a:hover {
     background: #fff url("../img/header_nav.png") no-repeat center; 
     background-size: cover;
 }
+
+.promo-2 {
+    background: #fff url("../img/header_nav2.png") no-repeat center; 
+    background-size: cover;
+}
+
+.promo-3 {
+    background: #fff url("../img/header_nav3.png") no-repeat center; 
+    background-size: cover;
+}

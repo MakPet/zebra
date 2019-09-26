@@ -405,7 +405,6 @@ header .main-menu > li > a:hover {
     font-weight: 700;
     text-transform: uppercase;
 
-    height: 170px;
     min-height: 170px;
 }
 
@@ -466,7 +465,6 @@ header .main-menu > li > a:hover {
 .categories-item-wrapper {
     display: flex;
 
-    height: 200px;
     min-height: 200px;
 
     margin-bottom: 70px;
@@ -538,3 +536,127 @@ header .main-menu > li > a:hover {
     background-image: url("../img/categories_sprites.png");
     background-position: -231px -25px;
 }
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+
+    min-height: 920px;
+    width: 100%;
+
+    color: #1d1d1d;
+    background-color: #fff;
+}
+
+.product-description {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+.product-description-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 40%;
+}
+
+.product-description-text h2 {
+    margin: 0 0 25px 0;
+
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.product-description-text > p {
+    margin: 0 0 30px 0;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price > p {
+    margin: 0;
+
+    min-width: 230px;
+
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.price > p span {
+    font-weight: 700;
+} 
+
+.price button {
+    min-width: 215px;
+    min-height: 50px;
+
+    margin: 2px 0;
+    padding: 0;
+
+    background-color: #d62132;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.price button span {
+    font-size: 28px;
+    font-weight: 400;
+    white-space: normal;
+
+    color: #fff;
+}
+
+.product-brand-wrapper {
+    position: absolute;
+    top: -15px;
+    left: 3%;
+}
+
+.product-brand-wrapper::before {
+    content: "";
+    display: block;
+
+    height: 0px;
+
+    position: absolute;
+    top: 0;
+    left: -14px;
+
+    border-right: 16px solid #6c000a;
+    border-top: 15px solid transparent;
+    transform: skew(11deg);
+}
+
+.product-brand-wrapper::after {
+    content: "";
+    display: block;
+
+    height: 0px;
+
+    position: absolute;
+    top: 0;
+    right: -14px;
+    
+    border-left: 16px solid #6c000a;
+    border-top: 15px solid transparent;
+    transform: skew(-11deg);
+}
+
+

@@ -81,7 +81,28 @@ header .main-menu > li > a:hover {
     align-items: center;
 
     min-width: 150px;
-    height: 100%;
+
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+
+    color: #9d9d9d;
+}
+
+.basket:before {
+    font-family: 'icomoon';
+    content: "\f291";
+    font-size: 26px;
+
+    color: #bdbdbd;
+}
+
+.basket:after {
+    font-family: 'icomoon';
+    content: "\f0d7";
+    font-size: 21px;
+
+    color: #bdbdbd;
 }
 
 .basket p {
@@ -619,6 +640,16 @@ header .main-menu > li > a:hover {
     font-size: 28px;
     font-weight: 400;
     white-space: normal;
+
+    margin-left: 10px;
+
+    color: #fff;
+}
+
+.price button:before {
+    font-family: 'icomoon';
+    content: "\f291";
+    font-size: 26px;
 
     color: #fff;
 }

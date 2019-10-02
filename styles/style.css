@@ -566,7 +566,7 @@ header .main-menu > li > a:hover {
 
     position: relative;
 
-    min-height: 920px;
+    min-height: 720px;
     width: 100%;
 
     color: #1d1d1d;
@@ -655,10 +655,13 @@ header .main-menu > li > a:hover {
 }
 
 .product-brand-wrapper {
-    position: absolute;
+    position: relative;
+
     z-index: 999 !important;
     top: -15px;
     left: 3%;
+
+    height: 0px;
 }
 
 .product-brand-wrapper::before {
@@ -684,7 +687,7 @@ header .main-menu > li > a:hover {
 
     position: absolute;
     top: 0;
-    right: -14px;
+    left: 348px;
     
     border-left: 16px solid #6c000a;
     border-top: 15px solid transparent;

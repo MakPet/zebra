@@ -657,11 +657,13 @@ header .main-menu > li > a:hover {
 .product-brand-wrapper {
     position: relative;
 
-    z-index: 999 !important;
+    z-index: 2;
+
     top: -15px;
     left: 3%;
 
     height: 0px;
+    width: 0px;
 }
 
 .product-brand-wrapper::before {

@@ -701,6 +701,8 @@ header .main-menu > li > a:hover {
 
 .product-carousel-item p {
     text-align: center;
+
+    color: #000;
 }
 
 footer {
